@@ -89,10 +89,6 @@ class HotBoxSubscriber: UIView {
       subscriber?.audioLevelDelegate = nil
     }
   }
-  
-  override static func requiresMainQueueSetup() -> Bool {
-    return true
-  }
 }
 
 extension HotBoxSubscriber: OTSubscriberKitAudioLevelDelegate {

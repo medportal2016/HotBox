@@ -221,4 +221,8 @@ class HotBoxService: RCTEventEmitter {
       reject("1", "", nil)
     }
   }
+  
+  override static func requiresMainQueueSetup() -> Bool {
+    return true
+  }
 }

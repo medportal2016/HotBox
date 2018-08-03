@@ -13,4 +13,8 @@ class HotBoxPublisherManager: RCTViewManager {
   override func view() -> UIView! {
     return HotBoxPublisher()
   }
+  
+  override static func requiresMainQueueSetup() -> Bool {
+    return true
+  }
 }

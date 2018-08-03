@@ -13,4 +13,8 @@ class HotBoxSubscriberManager: RCTViewManager {
   override func view() -> UIView! {
     return HotBoxSubscriber()
   }
+  
+  override static func requiresMainQueueSetup() -> Bool {
+    return true
+  }
 }
